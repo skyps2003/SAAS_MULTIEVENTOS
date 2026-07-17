@@ -46,19 +46,3 @@ Para iniciar la interfaz de caja/POS:
 ```bash
 npm run dev:caja
 ```
-
-## 📦 Recomendaciones de Despliegue (Plataformas Gratuitas)
-
-Para subir tu proyecto sin costo inicial (freemium/free tier), te recomiendo las siguientes plataformas:
-
-### Para el Frontend (Next.js):
-1. **Vercel**: Es la mejor opción para Next.js (son los creadores). El despliegue es automático desde GitHub, gratis, muy rápido y te da un dominio `.vercel.app`.
-2. **Netlify**: Otra excelente alternativa, muy sencilla de conectar con GitHub.
-
-### Para el Backend (Node.js/Express):
-1. **Render (render.com)**: Ofrece un plan gratuito para Web Services (tu backend en Node). Se "duerme" tras inactividad, pero es perfecto para pruebas y portfolios.
-2. **Railway (railway.app)**: Muy fácil de usar, a veces ofrece créditos gratuitos mensuales o planes "hobby" muy económicos.
-3. **Fly.io**: Excelente rendimiento y puedes correr un servidor Docker/Node gratis en su plan básico.
-
-### Para la Base de Datos (PostgreSQL):
-Dado que ya usas **Supabase** (`@supabase/supabase-js`), te recomiendo fuertemente usar el **plan gratuito de Supabase**. Te da una base de datos PostgreSQL, autenticación, storage y edge functions de manera gratuita para un proyecto, todo listo para producción.
