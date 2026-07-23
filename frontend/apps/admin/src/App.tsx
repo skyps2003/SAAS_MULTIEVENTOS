@@ -59,7 +59,9 @@ function App() {
   const fetchCurrentEvent = useEventStore((state) => state.fetchCurrentEvent);
 
   React.useEffect(() => {
-    if (userRole && userRole !== 'SUPER_ADMIN') {
+    // Esta ruta usa autenticación administrativa. El cajero ya recibe los
+    // datos del evento durante su propio login y no debe consultarla.
+    if (userRole === 'ADMIN_EVENTO') {
       void fetchCurrentEvent();
     }
   }, [fetchCurrentEvent, userRole]);

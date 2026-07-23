@@ -162,7 +162,7 @@ export const loginCajero = async (req: Request, res: Response) => {
         id_evento: evento.id_evento,
         id_sesion
       },
-      process.env.JWT_CAJA_SECRET || 'secret_caja',
+      process.env.JWT_CAJA_SECRET || 'clave_caja_secreta_2026',
       { expiresIn: '12h' }
     );
 

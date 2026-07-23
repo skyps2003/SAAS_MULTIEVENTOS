@@ -122,7 +122,7 @@ const getPaymentColor = (method: string, configuredColor?: string) => {
 
 export function PosPage() {
   const { logout, user } = useAuthStore();
-  const { currentEvent, fetchCurrentEvent } = useEventStore();
+  const { currentEvent } = useEventStore();
   const [activeTab, setActiveTab] = useState<'pos' | 'historial'>('pos');
   const [activeSection, setActiveSection] = useState<'combos' | 'productos'>('combos');
 
@@ -196,7 +196,6 @@ export function PosPage() {
     }
 
     if (token && isCajero) {
-      if (!currentEvent) fetchCurrentEvent();
       fetchMetodosPago();
       fetchCategorias();
       fetchCombos();
